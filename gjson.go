@@ -2,7 +2,7 @@
 package gjson
 
 import (
-	"encoding/json"
+	jsoniter "github.com/json-iterator/go"
 	"strconv"
 	"strings"
 	"time"
@@ -13,6 +13,8 @@ import (
 	"github.com/tidwall/match"
 	"github.com/tidwall/pretty"
 )
+
+var json = jsoniter.ConfigCompatibleWithStandardLibrary
 
 // Type is Result type
 type Type int
